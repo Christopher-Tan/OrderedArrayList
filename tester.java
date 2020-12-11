@@ -16,5 +16,12 @@ public class tester {
             System.out.println(e);
         }
         System.out.println(a);
+        System.out.println(a.set(1,"Hi"));
+        try {
+            a.set(2,null);
+        } catch (IllegalArgumentException e) {
+            System.out.println(e);
+        }
+        System.out.println(a);
     }
 }

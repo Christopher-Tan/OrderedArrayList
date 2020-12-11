@@ -12,4 +12,10 @@ public class NoNullArrayList<T> extends ArrayList<T> {
         }
         return super.add(e);
     }
+    public T set(int index, T element) throws IllegalArgumentException {
+        if (element == null) {
+            throw new IllegalArgumentException("cannot accept null value");
+        }
+        return super.set(index,element);
+    }
 }
