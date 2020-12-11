@@ -23,5 +23,9 @@ public class tester {
             System.out.println(e);
         }
         System.out.println(a);
+        NoNullArrayList b = new NoNullArrayList<NoNullArrayList>(20);
+        b.add(a);
+        b.add(b);
+        System.out.println(b);
     }
 }
