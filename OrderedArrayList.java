@@ -15,4 +15,10 @@ public class OrderedArrayList<T extends Comparable<T>> extends NoNullArrayList<T
         }
         return true;
     }
+    public T set(int index, T element) {
+        T result = get(index);
+        remove(index);
+        add(element);
+        return result;
+    }
 }

@@ -38,5 +38,7 @@ public class tester {
             e.add(10,d[i]);
         }
         System.out.println(e);
+        System.out.println(e.set(4,14));
+        System.out.println(e);
     }
 }
