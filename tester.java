@@ -27,5 +27,16 @@ public class tester {
         b.add(a);
         b.add(b);
         System.out.println(b);
+        OrderedArrayList c = new OrderedArrayList<Integer>();
+        int[] d = {1,5,3,4,6,2,9,2,20};
+        for (int i = 0; i < d.length; i++) {
+            c.add(d[i]);
+        }
+        System.out.println(c);
+        OrderedArrayList e = new OrderedArrayList<Integer>();
+        for (int i = 0; i < d.length; i++) {
+            e.add(10,d[i]);
+        }
+        System.out.println(e);
     }
 }
