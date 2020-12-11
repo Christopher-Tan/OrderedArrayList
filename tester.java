@@ -9,5 +9,12 @@ public class tester {
             System.out.println(e);
         }
         System.out.println(a);
+        System.out.println(a.add("String"));
+        try {
+            a.add(null);
+        } catch (IllegalArgumentException e) {
+            System.out.println(e);
+        }
+        System.out.println(a);
     }
 }
