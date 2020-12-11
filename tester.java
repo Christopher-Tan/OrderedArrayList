@@ -40,5 +40,6 @@ public class tester {
         System.out.println(e);
         System.out.println(e.set(4,14));
         System.out.println(e);
+        OrderedArrayList f = new OrderedArrayList<String>(10);
     }
 }
