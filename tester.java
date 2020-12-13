@@ -41,5 +41,11 @@ public class tester {
         System.out.println(e.set(4,14));
         System.out.println(e);
         OrderedArrayList f = new OrderedArrayList<String>(10);
+        try {
+            f.add(null);
+        } catch (RuntimeException error) {
+            System.out.println(error);
+        }
+        System.out.print(f);
     }
 }
